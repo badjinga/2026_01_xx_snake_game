@@ -159,7 +159,7 @@ def main(stdscr):
     
     # WINDOWS SECTION
     game_window = curses.newwin(screen_size ,screen_size*2 +1 ,6 ,7) # +1 can be explained, i couldn´t write in the last corner
-    stats_window = curses.newwin(50,150,5, 7 + screen_size*2 + 4)
+    stats_window = curses.newwin(50,curses.COLS,5, 7 + screen_size*2 + 4)
     rectangle(stdscr, 5, 6, 6 + screen_size, 8 + screen_size*2)  # draw border on stdscr
     stdscr.refresh()
 
