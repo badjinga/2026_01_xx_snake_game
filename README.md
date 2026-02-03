@@ -9,6 +9,8 @@ A fully-featured Snake game built from scratch using Python's curses library. Fe
 
 **No external packages** beyond standard library + Windows curses wrapper
 
+**Terminal window: Minimum size required (exact dimensions unknown), optimal experience with largest possible window.**
+
 ## 🚀 Quick Start
 
 **macOS/Linux (no install needed):**
