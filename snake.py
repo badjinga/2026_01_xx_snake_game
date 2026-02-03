@@ -104,7 +104,7 @@ def main(stdscr):
     stdscr.addstr(3,3,f"Snake Game 🍎", GREEN_ON_BLACK)
     stdscr.addstr(4,3,f"Developed by André Godinho gmail: am.godinho.2003@gmail.com")
     stdscr.addstr(5,3,f"Terminal window has dimensions:{curses.LINES, curses.COLS}")
-    stdscr.addstr(6,3,f"Game needs terminal wide enough for chosen size")
+    stdscr.addstr(6,3,f"Game needs terminal wide enough")
 
     stdscr.addstr(9,3,f"To start the game press character {"s"}")
 
