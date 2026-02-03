@@ -125,7 +125,7 @@ def main(stdscr):
 
     stdscr.addstr(5,7, "Below, input screen_size:")
     stdscr.addstr(7,7, "screen_size should be between 8 and 30 ")
-    stdscr.addstr(9,7, "After input type Ctrl G")
+    stdscr.addstr(9,7, "After input type ENTER")
     input_win = curses.newwin(1, 3, 6, 7)   
     stdscr.refresh()
 
@@ -159,7 +159,7 @@ def main(stdscr):
     
     # WINDOWS SECTION
     game_window = curses.newwin(screen_size ,screen_size*2 +1 ,6 ,7) # +1 can be explained, i couldn´t write in the last corner
-    stats_window = curses.newwin(50,curses.COLS,5, 7 + screen_size*2 + 4)
+    stats_window = curses.newwin(50,curses.COLS - screen_size*2 - 6,5, 7 + screen_size*2 + 4)
     rectangle(stdscr, 5, 6, 6 + screen_size, 8 + screen_size*2)  # draw border on stdscr
     stdscr.refresh()
 
@@ -278,8 +278,4 @@ def main(stdscr):
     stdscr.refresh()
     function_get_key(stdscr,"q")    
 
-
 wrapper(main)
-
-# thats what I want A state variable that remembers the current direction.
-
