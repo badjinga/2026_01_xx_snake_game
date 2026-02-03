@@ -1,14 +1,25 @@
 # 2026_01_xx_snake_game
 A fully-featured Snake game built from scratch using Python's curses library. Features dynamic grid sizing (user input), smooth arrow-key controls, collision detection, speed increases as you grow, and clean game-over handling. Pure terminal-based—no external dependencies beyond standard Python.
 
+## Requirements
+
+**Requires Python 3.8+**
+
+**Python `curses` (built-in macOS/Linux), `windows-curses` (Windows)**
+
+**No external packages** beyond standard library + Windows curses wrapper
+
 ## 🚀 Quick Start
 
-**Run in any terminal:**
+**macOS/Linux (no install needed):**
 ```bash
 python3 snake.py
-
 ```
-
+**windows**
+```bash
+pip install -r requirements.txt
+python snake.py
+```
 ## Why did I develop this game
 
 I wasn't always into computers. Growing up, my dad, a computer science engineer—tried everything to spark my interest, but it never clicked.
